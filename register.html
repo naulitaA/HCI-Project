@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registers Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-main.css">
+    <link rel="stylesheet" href="styles/style-register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="detail-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/Main-assets/logo.png" alt="">
+            </div>
+            <!-- Welcome Text -->
+            <div class="welcome-text">
+                <p>
+                    Let's get into <span style="color:green">EvoFresh</span>!
+                </p>
+            </div>
+            <!-- Form Content -->
+            <div class="form-content">
+                <div id="username">
+                    <label for="username" class="labels">Username</label>
+                    <input type="text" placeholder="Enter your username..." aria-label="Username" name="username" id="username" class="boxes" required>
+                    <div id="errorusername" class="error"></div>
+                </div>
+                <div id="password">
+                    <label for="password" class="labels">Password</label>
+                    <input type="text" placeholder="Enter your password..." name="password" id="password" class="boxes" required>
+                    <div id="errorpassword" class="error"></div>
+                </div>
+                <!-- <div id="address">
+                    <label for="address" class="labels">Address Details</label>
+                    <input type="text" placeholder="Enter your address details..." name="password" id="password" class="big-boxes" required>
+                    <div id="erroraddress" class="error"></div>                
+                </div> -->
+                <div id="login-button">
+                    <button type="submit">Login</button>
+                </div>
+                <div id="register-button">
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
