@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-main.css">
+    <link rel="stylesheet" href="styles/style-ubahprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="detail-container">
+            <div class="detail-navigation">
+                <div class="back-button">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <p>Ubah Profil</p>
+        </div>
+        
+        <div class="detail-content">
+            <div class="detail-image">
+                <img src="assets/Ubah-Profile/profile.png" alt="">
+            </div>
+
+            <div class="form-content">
+                <form id="ubahprofile-form">
+                    <div id="name">
+                        <label for="name" class="labels">Your Name</label>
+                        <input type="text" placeholder="Name" name="name" id="name" class="boxes">
+                        <div id="errorname" class="error"></div>
+                    </div>
+                    <div id="birthday">
+                        <label for="birthday" class="labels">Your Birthday</label>
+                        <input type="date" placeholder="Birthday" name="birthday" id="birthday" class="boxes">
+                        <div id="errorbirthday" class="error"></div>
+                    </div>
+                    <div id="save-button">
+                        <button type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+</body>
+</html>

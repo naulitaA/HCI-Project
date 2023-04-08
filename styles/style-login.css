@@ -5,8 +5,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-template-rows: 2fr 1fr 7fr; */
 }
 
 .logo{
@@ -39,12 +37,22 @@
 
 .form-content{
     margin-top: 15px;
+    /* width: px; */
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: first baseline;
 }
+
+/* .register-form{
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+} */
 
 .labels{
     font-size: 13px;
@@ -60,6 +68,7 @@
     border-radius: 10px;
     border: 2px solid grey;
     box-shadow: 0.5px 0.5px 2px 0.5px grey;
+    
 }
 
 .big-boxes{
@@ -86,15 +95,6 @@
 }
 
 #password::placeholder{
-    padding-left: 2vw;
-}
-
-#address{
-    margin-bottom: 40px;
-    width: 100%;
-}
-
-#address::placeholder{
     padding-left: 2vw;
 }
 
