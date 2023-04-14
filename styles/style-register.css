@@ -46,6 +46,15 @@
     align-items: first baseline;
 }
 
+#registerform{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+
 .labels{
     font-size: 13px;
     font-weight:bold;
@@ -77,7 +86,7 @@
 }
 
 #username::placeholder{
-    padding-left: 2vw;
+    padding-left: 10px;
 }
 
 #password{
@@ -86,7 +95,7 @@
 }
 
 #password::placeholder{
-    padding-left: 2vw;
+    padding-left: 10px;
 }
 
 #address{
@@ -95,7 +104,7 @@
 }
 
 #address::placeholder{
-    padding-left: 2vw;
+    padding-left: 10px;
 }
 
 #register-button{
@@ -121,6 +130,10 @@
     height: 40px;
     display: flex;
     justify-content: center;
+}
+
+#login-button a{
+    width: 100%;
 }
 
 #login-button button{

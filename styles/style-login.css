@@ -45,14 +45,14 @@
     align-items: first baseline;
 }
 
-/* .register-form{
-    width: 200px;
+#loginform{
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: first baseline;
-} */
+}
 
 .labels{
     font-size: 13px;
@@ -86,7 +86,7 @@
 }
 
 #username::placeholder{
-    padding-left: 2vw;
+    padding-left: 10px;
 }
 
 #password{
@@ -95,7 +95,7 @@
 }
 
 #password::placeholder{
-    padding-left: 2vw;
+    padding-left: 10px;
 }
 
 #register-button{
@@ -105,11 +105,14 @@
     justify-content: center;
 }
 
+#register-button a{
+    width: 100%;
+}
+
 #register-button button{
     border: 2px solid green;
     border-radius: 10px;
-    background-color: green;
-    color: white;
+    background-color: white;
     /* width: 280px; */
     width: 100%;
     height: 35px;
@@ -126,7 +129,8 @@
 #login-button button{
     border: 2px solid green;
     border-radius: 10px;
-    background-color: white;
+    background-color: green;
+    color: white;
     /* width: 280px; */
     width: 100%;
     height: 35px;

@@ -68,13 +68,13 @@
     padding-left: 10px;
 }
 
-#birthday{
+#password{
     margin-bottom: 30px;
     width: 100%;
 }
 
-#birthday::placeholder{
-    padding-left: 2vw;
+#password::placeholder{
+    padding-left: 10px;
 }
 
 #save-button{

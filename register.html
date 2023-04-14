@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style-main.css">
     <link rel="stylesheet" href="styles/style-register.css">
+    <script defer src="register.js"></script>
 </head>
 <body>
     <div class="container">
@@ -27,27 +28,31 @@
             </div>
             <!-- Form Content -->
             <div class="form-content">
-                <div id="username">
-                    <label for="username" class="labels">Username</label>
-                    <input type="text" placeholder="Enter your username..." aria-label="Username" name="username" id="username" class="boxes" required>
-                    <div id="errorusername" class="error"></div>
-                </div>
-                <div id="password">
-                    <label for="password" class="labels">Password</label>
-                    <input type="text" placeholder="Enter your password..." name="password" id="password" class="boxes" required>
-                    <div id="errorpassword" class="error"></div>
-                </div>
-                <div id="address">
-                    <label for="address" class="labels">Address Details</label>
-                    <input type="text" placeholder="Enter your address details..." name="password" id="password" class="big-boxes" required>
-                    <div id="erroraddress" class="error"></div>                
-                </div>
-                <div id="register-button">
-                    <button type="submit">Register</button>
-                </div>
-                <div id="login-button">
-                    <button type="submit">Login</button>
-                </div>
+                <form id="registerform">
+                    <div id="username">
+                        <label for="username" class="labels">Username</label>
+                        <input type="text" placeholder="Enter your username..." aria-label="Username" name="username" id="username" class="boxes" required>
+                        <div id="errorusername" class="error"></div>
+                    </div>
+                    <div id="password">
+                        <label for="password" class="labels">Password</label>
+                        <input type="password" placeholder="Enter your password..." name="password" id="password" class="boxes" required>
+                        <div id="errorpassword" class="error"></div>
+                    </div>
+                    <div id="address">
+                        <label for="address" class="labels">Address Details</label>
+                        <input type="text" placeholder="Enter your address details..." name="password" id="password" class="big-boxes" required>
+                        <div id="erroraddress" class="error"></div>                
+                    </div>
+                    <div id="register-button">
+                        <button type="submit">Register</button>
+                    </div>
+                    <div id="login-button">
+                        <a href="login.html">
+                            <button type="submit">Login</button>
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
