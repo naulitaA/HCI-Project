@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style-main.css">
     <link rel="stylesheet" href="styles/style-login.css">
+    <script defer src="login.js"></script>
 </head>
 <body>
     <div class="container">
@@ -28,25 +29,30 @@
             <!-- Form Content -->
             <div class="form-content">
                 <form id="loginform">
-                        <div id="username">
+                    <!-- Form -->
+                        <div id="usernamebox">
                             <label for="username" class="labels">Username</label>
                             <input type="text" placeholder="Enter your username..." name="username" id="username" class="boxes" required>
                             <div id="errorusername" class="error"></div>
                         </div>
-                        <div id="password">
+                        <div id="passwordbox">
                             <label for="password" class="labels">Password</label>
-                            <input type="text" placeholder="Enter your password..." name="password" id="password" class="boxes" required>
+                            <input type="password" placeholder="Enter your password..." name="password" id="password" class="boxes" required>
                             <div id="errorpassword" class="error"></div>
                         </div>
                         <div id="login-button">
                             <button type="submit">Login</button>
                         </div>
+                        <!-- Form -->
+                </form>
+
                         <div id="register-button">
                             <a href="register.html">
-                                <button type="submit">Register</button>
+                                <p>
+                                    Register
+                                </p>
                             </a>
                         </div>
-                </form>
             </div>
         </div>
     </div>
