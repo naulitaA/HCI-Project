@@ -15,6 +15,7 @@
 }
 
 .detail-navigation .back-button {
+    text-decoration: none;
     border: 2px solid green;
     width: 45px;
     height: 45px;
@@ -33,14 +34,37 @@
     color: green;
 }
 
+.detail-image-area{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .detail-image{
     display: flex;
     justify-content: center;
-}
-
-.detail-image img{
     position: relative;
     scale: 0.8;
+    z-index: 2;
+}
+
+#image{
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+}
+
+#change-icon{
+    position: absolute;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/Ubah-Profile/icon.png);
+    scale: 0.7;
+    bottom: 15%;
+    right: 35%;
+    z-index: 4;
 }
 
 .labels{
@@ -59,12 +83,16 @@
     box-shadow: 0.5px 0.5px grey;
 }
 
-#name{
-    margin-bottom: 5px;
+#name-box{
+    margin-bottom: 30px;
     width: 100%;
 }
 
-#name::placeholder{
+#name-box label{
+    margin-bottom: 5px;
+}
+
+#name-box::placeholder{
     padding-left: 10px;
 }
 

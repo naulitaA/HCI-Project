@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style-main.css">
     <link rel="stylesheet" href="styles/style-ubahprofile.css">
+    <script defer src="ubah-profil.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
         <div class="detail-container">
             <div class="detail-navigation">
                 <div class="back-button">
-                    <a href="index.html">
+                    <a href="profile.html">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 </div>
@@ -26,24 +27,30 @@
         </div>
         
         <div class="detail-content">
-            <div class="detail-image">
-                <img src="assets/Ubah-Profile/profile.png" alt="">
+            <div class="detail-image-area">
+                <div class="detail-image">
+                    <img src="assets/Ubah-Profile/profile.png" id="image" alt="">
+                </div>
+                <!-- <img src="assets/Ubah-Profile/icon.png" id="icon-image" alt=""> -->
+                <button id="change-icon" onclick="changeImage()">
+                    <img src="assets/Ubah-Profile/icon.png" alt="">
+                </button>
             </div>
 
             <div class="form-content">
                 <form id="ubahprofile-form">
-                    <div id="name">
-                        <label for="name" class="labels">New Name</label>
-                        <input type="text" placeholder="Name" name="name" id="name" class="boxes">
+                    <div id="name-box">
+                        <label for="name" class="labels">Nama Baru</label>
+                        <input type="text" placeholder="Masukkan nama baru..." name="name" id="name" class="boxes">
                         <div id="errorname" class="error"></div>
                     </div>
-                    <div id="password">
-                        <label for="password" class="labels">New Password</label>
+                    <!-- <div id="password">
+                        <label for="password" class="labels">Password Baru</label>
                         <input type="text" placeholder="Password" name="password" id="password" class="boxes">
                         <div id="errorpassword" class="error"></div>
-                    </div>
+                    </div> -->
                     <div id="save-button">
-                        <button type="submit">Save</button>
+                        <button type="submit" onclick="changeProfile(event)">Save</button>
                     </div>
                 </form>
             </div>
